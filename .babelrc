@@ -1,3 +1,7 @@
+// a dot in the front the file name means this is a hidden file
+// babel is a javascript compiler, so the code will be 're-written' in a way that any browser could
+// read the javascript--older browsers can now compile modern javascript 
+
 {
   "presets": [
     "env",

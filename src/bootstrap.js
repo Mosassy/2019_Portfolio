@@ -1,3 +1,5 @@
+// this is the main start of the application. (see line 16)
+// we are importing all our dependencies here:() as well as our css files on 13
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -14,11 +16,11 @@ import './style/main.scss';
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
-      <BrowserRouter>
+      <BrowserRouter> 
         <App />
       </BrowserRouter>
     </Provider>
-    , document.querySelector('.app-wrapper'));
+    , document.querySelector('.app-wrapper')); //this is where we slide in all the react code
 }
 
 document.addEventListener('DOMContentLoaded', main);

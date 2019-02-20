@@ -1,16 +1,16 @@
-// webpack plugins
+// webpack plugins this is a list of rules we want to app to follow
 const SplitChunksPlugin = require('webpack/lib/optimize/SplitChunksPlugin');
 
 module.exports = {
   entry: {
-    app: ['./src/bootstrap.js'],
-    vendor: './src/vendor.js',
+    app: ['./src/bootstrap.js'], //  this is telling the application to start by looking at this file
+    vendor: './src/vendor.js', //this brings in the polyfils
   },
 
   resolve: {
-    extensions: ['.js', '.scss'],
+    extensions: ['.js', '.scss'], //this is saying the type of files we will allow
 
-    modules: ['node_modules'],
+    modules: ['node_modules'], //pointing to where our list of dependencies are
   },
 
   module: {
